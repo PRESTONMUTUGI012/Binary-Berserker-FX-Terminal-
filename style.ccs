@@ -1,0 +1,42 @@
+/* Custom Animations and Styling for Apexflow Market Dollar Hunters */
+
+/* Pulse animation for the green connection status badge */
+.pulse-green {
+    animation: pulseGreen 1.5s infinite;
+}
+
+@keyframes pulseGreen {
+    0% { 
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); 
+    }
+    70% { 
+        box-shadow: 0 0 0 8px rgba(34, 197, 94, 0); 
+    }
+    100% { 
+        box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); 
+    }
+}
+
+/* Glow effect for the SVG live tick chart line */
+.chart-glow {
+    filter: drop-shadow(0px 0px 8px rgba(34, 197, 94, 0.4));
+}
+
+/* Smooth scrollbar styling for the live stream table */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
